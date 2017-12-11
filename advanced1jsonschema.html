@@ -4,13 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		tbody {
-			display:flex;
+		table {
+		
+
+				
 		}
 		tr {
-			display:flex;
-			border:1px solid black;
 			
+			border:1px solid black;
+			padding: 20px;
+			
+		}
+		td {
+			
+			padding: 10px;
+			border:1px solid black;
+		
 		}
 	</style>
 </head>
@@ -21,17 +30,27 @@
 
 	<script src="employees.json"></script>
 	<script>
-		for (var i = 0; i < employees.length; i++) {
-			obj = employees[i];
-			console.log(obj);
-			document.getElementById("table").innerHTML += "<tr id='row" + i + "'></tr>";
+		
 
-			for (var el in obj)
+		for (var i = 0; i < employees.length; i++) {
+			
+			obj = employees[i];
+			var tabrow = document.createElement("tr");
+			tabrow.setAttribute("id", "row" + i);
+			document.getElementById("table").appendChild(tabrow);
+
+			for (var key in obj)
 			{	
-			document.getElementById("row" + i).innerHTML += "<td>" + el + " " + obj[el] + " " + "</td>";
+		
+			var tabcol = document.createElement("td");
+			tabcol.setAttribute("id", "col_" + key + i);
+			
+			document.getElementById("row" + i).appendChild(tabcol);
+			
+			document.getElementById("col_" + key + i).innerHTML = obj[key];}
 			
 			}
-		}
+		
 	</script>
 </body>
 </html>
