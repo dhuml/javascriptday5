@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		var actors = ["Tom Hanks", "Leonardo di Caprio", " Jennifer Lawrence", "Daniel Radcliffe"];
+		for (var i = 0; i < actors.length; i++) {
+			actors[i] = "Awsome " + actors[i];
+		}
+		console.log(actors);
+	</script>
+
+	<script>
+		var rndmsht = [
+		["deliverables ", "globalization ", "C# ", "sweeten ", "AWS "], 
+		["collateral ", "enabling ", "provision ", "in the zone ", "framework "], 
+		["AJAX ", "gating item(s) ", "FREE ", "close the loop ", "re-prioritization "], 
+		["at Stanford, we ", "re-branding ", "user-oriented ", "team building ", "fast-track "], 
+		["culture change", "moving forward", "suite of tools", "empowerment", "regression test"]];
+
+		function rndmphrase(a) {
+			var bt = ["is ", "of ", "coupled with ", "approach that induces ", "."];
+			phrase = "";
+			for (var i = 0; i < a.length; i++) {
+				phrase += a[i][Math.floor(Math.random() * 5)] + bt[i];
+			}
+				console.log(phrase);
+		}
+
+		console.log(rndmphrase(rndmsht));
+	</script>
+
+	<script>
+		x = Math.random() * 100;
+		y = Math.random() * 100;
+		z = Math.random() * 100;
+		rndar = [10, 3, 2, 6, 4, 24, 0.5]
+		console.log(x);
+		console.log(y);
+		console.log(z);
+
+		function mn(a,b) {
+			if (a < b) {
+				console.log(a + " is smaller than " + b);
+			}
+			else {
+				console.log(b + " is smaller than " + a);
+			}
+		}
+
+		mn(x, y);
+
+		function mx(a,b) {
+			if (a > b) {
+				console.log(a + " is bigger than " + b);
+			}
+			else {
+				console.log(b + " is bigger than " + a);
+			}
+		}
+		mx(x, y);
+
+		function mn3 (a,b,c) {
+			if (a < b && a < c) {
+				console.log(a + " is the smallest of these 3.");
+			}
+			else if (b < a && b < c) {
+				console.log(b + " is the smallest of these 3.")
+			}
+			else {
+				console.log(c + " is the smallest of these 3.")
+			}
+		}
+
+		mn3(x, y, z);
+
+		function armn(ar) {
+			arraymn = ar[0];
+			for (var i = 0; i < ar.length; i++) {
+				if (ar[i] < arraymn) {
+					arraymn = ar[i];
+					console.log(arraymn);
+				}
+
+			}
+			console.log(arraymn);
+		}
+
+		armn(rndar);
+	</script>
+	<script>
+		var cat = {
+		"legs": 4,
+		"name": "Tom",
+		"color": "pale blue"
+		};
+		console.log("cat has " + cat.legs);
+		console.log("cat has " + cat["legs"]);
+
+		var dog = {
+			"legs":4,
+			"eyecolor": "green",
+			"color": "brown" };
+		console.table(Object.keys(dog));
+		console.table(Object.keys(cat));
+
+		var cat2 = {};
+		cat2["legs"] = 3;
+		cat2["name"] = "asdf";
+
+		console.table(cat2);
+
+		cat2["legs"] = 4;
+
+		console.table(cat2);
+	</script>
+	
+	<script>
+		
+		
+	</script>
+
+
+</body>
+</html>

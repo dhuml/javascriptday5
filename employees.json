@@ -1,0 +1,80 @@
+var employees = [
+{
+	"id": "00",
+	"firstName": "Mikel",
+	"lastName": "Law",
+	"email":"m.law@gmail.com",
+	"jobTitle": "Developer",
+	"salary": "2300"
+},
+{
+	"id": "01",
+	"firstName": "Phillip",
+	"lastName":"Lambert",
+	"email":"p.lambert@gmail.com",
+	"jobTitle":"Waiter",
+	"salary":"1300"
+},
+{
+	"id": "02",
+	"firstName": "Tina",
+	"lastName":"Curtis",
+	"email":"t.curtis@gmail.com",
+	"jobTitle":"Chef",
+	"salary":"1500"
+},
+{
+	"id": "03",
+	"firstName":"Greg",
+	"lastName":"Wolfe",
+	"email":"gwolf@gmail.com",
+	"jobTitle":"Analyst",
+	"salary":"1800"
+},
+{
+	"id": "04",
+	"firstName":"Mabel",
+	"lastName":"McKinney",
+	"email": "mamckinney@gmail.com",
+	"jobTitle":"Receptionist",
+	"salary":"1300"
+},
+{
+	"id": "05",
+	"firstName":"Salvador",
+	"lastName":"Allison",
+	"email":"sal.allison@gmail.com",
+	"jobTitle":"Teacher",
+	"salary":"1400"
+},
+{
+	"id": "06",
+	"firstName":"Ernest",
+	"lastName":"Flowers",
+	"email": "e.flower@gmail.com",
+	"jobTitle":"Programm Director",
+	"salary":"3000"
+},
+{
+	"id": "07",
+	"firstName":"Bert",
+	"lastName":"Bell",
+	"email": "bbell@gmx.com",
+	"jobTitle":"Postman",
+	"salary":"1200"
+},
+{
+	"id": "08",
+	"firstName":"Leslie",
+	"lastName":"Thompson",
+	"email": "lesthompson@gmx.com",
+	"jobTitle":"Programmer",
+	"salary":"2500"
+},{
+	"id": "09",
+	"firstName":"Martin",
+	"lastName":"Vaughn",
+	"email":"m.vaughn@gmx.at",
+	"jobTitle":"Project Manager",
+	"salary":"2000"
+}]

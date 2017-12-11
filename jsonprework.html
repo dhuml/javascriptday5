@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>json</title>
+</head>
+<body>
+	
+	
+	<script src="data.json"></script>
+	
+	<script>
+		for (var i = 0; i < json.length; i++) {
+			console.log(json[i])
+
+			var obj = json[i];
+			document.write(obj.firstName + " is " + obj.jobTitleName + "<br>");
+		}
+	</script>
+</body>
+</html>
